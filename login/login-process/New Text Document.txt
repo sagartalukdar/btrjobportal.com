@@ -1,0 +1,55 @@
+<div class="fxt-form">
+							<h2>Login/Signup</h2>
+							<p style="color: red">(Login with username / password )</p>
+							<form method="POST" action="login-process.php">
+
+								<div class="form-group">
+								    <div class="fxt-transformY-50 fxt-transition-delay-3">
+								    	<select name="user-type" class="" required="required">
+								    		<!-- <option value="" hidden>Sign in as a </option> -->
+								    		<option value="" selected disabled>Sign in as a </option>   
+								    		<option value="ADMIN">ADMIN</option>
+								    		<option value="APPLICANT">Job Seeker </option>
+								    		<option value="COUNSELLOR">Counsellor </option>
+								    		<option value="COMPANY">Company/Employer </option>
+								    	</select>
+								        
+								    </div>
+								</div>
+
+								<div class="form-group">
+								    <div class="fxt-transformY-50 fxt-transition-delay-3">
+								        <input type="text" class="form-control with-icon" name="user-email" placeholder="Email/Mobile" required="required">
+								    </div>
+								</div>
+
+								
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-4">
+										<input id="password" type="password" class="form-control with-icon2" name="user-password" placeholder="********" required="required">
+										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-3">
+										<div class="fxt-checkbox-area">
+											<div class="checkbox">
+												<input id="checkbox1" type="checkbox">
+												<label for="checkbox1" style="color: #0d6efd;">Keep me logged in</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-5">
+										<div class="text-center">
+											<button type="submit" class="fxt-btn-fill">Sign in </button>
+											
+											
+										</div>
+										<p>Don't have an account?<a style="color: #0d6efd;" href="register.php"> Register Here</a></p>
+										
+									</div>
+								</div>
+							</form>
+						</div>

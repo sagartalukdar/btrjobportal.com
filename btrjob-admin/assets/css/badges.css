@@ -1,0 +1,52 @@
+.custom-badge-reject {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem; /* for rounded corners */
+  background-color: #dc3545; /* red color for danger */
+  color: #fff; /* white color for text */
+}
+.custom-badge-hire {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem; /* for rounded corners */
+  background-color: #17b856; /* red color for danger */
+  color: #fff; /* white color for text */
+}
+.custom-badge-interview {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem; /* for rounded corners */
+  background-color: #ffc107; /* red color for danger */
+  color: black; /* white color for text */
+}
+.custom-badge-pending {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem; /* for rounded corners */
+  background-color: #17a2b8; /* red color for danger */
+  color: #fff; /* white color for text */
+}

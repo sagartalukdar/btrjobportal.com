@@ -1,0 +1,75 @@
+<script>
+       $(function () {
+        $('#verify-btn').on('click', function () {
+        var verifyId = $(this).data('vid');
+        console.log(verifyId);
+        if (confirm('Are you sure you want to Verify this company?')) {
+        $.ajax({
+            type: "POST", 
+            dataType: "json",
+            url: "xhr/active-company.php",
+            data: {verifyId : verifyId},
+            success: function(response){
+                        if(response.successMessage){
+                            // showSuccessMessage ();
+                            swal("Success!",response.successMessage+" Reloading", "success");
+                            
+                            setTimeout(function () {
+                            window.location.reload();
+                            }, 3000);   
+                            
+                        } else if (response.errorMessage) {
+                            swal("Error!", response.errorMessage, "error");
+                        }
+                        
+                        },
+                        error: function(error){
+                        swal("Error!", "Something went wrong", "error");
+                        
+                        }
+                    });
+                } else {
+                alert('Company Verification aborted.');
+            }
+        });
+       });
+
+
+
+       $(function () {
+        $('#reject-btn').on('click', function () {
+        var rejectId = $(this).data('rid');
+        console.log(rejectId);
+        if (confirm('Are you sure you want to reject this company?')) {
+        $.ajax({
+            type: "POST", 
+            dataType: "json",
+            url: "xhr/reject-company.php",
+            data: {rejectId : rejectId},
+            success: function(response){
+                        if(response.successMessage){
+                            // showSuccessMessage ();
+                            swal("Success!",response.successMessage+" Reloading", "success");
+                            
+                            setTimeout(function () {
+                            window.location.reload();
+                            }, 3000);   
+                            
+                        } else if (response.errorMessage) {
+                            swal("Error!", response.errorMessage, "error");
+                        }
+                        
+                        },
+                        error: function(error){
+                        swal("Error!", "Something went wrong", "error");
+                        
+                        }
+                    });
+                } else {
+                alert('Company Rejection aborted.');
+            }
+        });
+      
+       });
+
+    </script>
